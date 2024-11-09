@@ -143,6 +143,9 @@ app.get('/property-details.html', function (req, res){
 app.get('/contact.html', function (req, res){
     res.sendFile(path.join(__dirname + '/contact.html'));
 });
+app.get('/food&drink.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/food&drink.html'));
+});
 
 
 // Start the server

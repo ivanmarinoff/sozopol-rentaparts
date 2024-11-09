@@ -6,8 +6,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (rental_site)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="swiper" level="application" />
     <orderEntry type="library" name="html5shiv" level="application" />
     <orderEntry type="library" name="respond.js" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
