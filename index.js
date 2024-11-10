@@ -146,6 +146,9 @@ app.get('/contact.html', function (req, res){
 app.get('/food&drink.html', function (req, res){
     res.sendFile(path.join(__dirname + '/food&drink.html'));
 });
+app.get('/traveling.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/traveling.html'));
+});
 
 
 // Start the server

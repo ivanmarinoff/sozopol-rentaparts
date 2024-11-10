@@ -1384,6 +1384,10 @@ Page Header Style
   text-align: center;
 }
 
+.page-heading.page-heading-1 {
+  background-image: url(../images/boat.jpg);
+}
+
 .page-heading span {
   background-color: #fff;
   color: #1e1e1e;
