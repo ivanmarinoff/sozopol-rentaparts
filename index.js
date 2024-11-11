@@ -150,6 +150,17 @@ app.get('/traveling.html', function (req, res){
     res.sendFile(path.join(__dirname + '/traveling.html'));
 });
 
+// Dynamic route for 'apartment-1.html' to 'apartment-9.html'
+app.get('/apartment-:id.html', function (req, res) {
+    const apartmentId = req.params.id;
+
+    // Ensure 'id' is a number between 1 and 9 to prevent invalid access
+    if (apartmentId >= 1 && apartmentId <= 9) {
+        res.sendFile(path.join(__dirname, `apartment-${apartmentId}.html`));
+    } else {
+        res.status(404).send('Apartment not found');
+    }
+});
 
 // Start the server
 app.listen(port, function () {
