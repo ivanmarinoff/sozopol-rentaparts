@@ -1388,6 +1388,10 @@ Page Header Style
   background-image: url(../images/boat.jpg);
 }
 
+.page-heading.page-heading-2 {
+  background-image: url(../images/dinner-crop.jpg);
+}
+
 .page-heading span {
   background-color: #fff;
   color: #1e1e1e;

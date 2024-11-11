@@ -150,6 +150,14 @@ app.get('/traveling.html', function (req, res){
     res.sendFile(path.join(__dirname + '/traveling.html'));
 });
 
+app.get('/culture.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/culture.html'));
+});
+
+app.get('/cuisine.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/cuisine.html'));
+});
+
 // Dynamic route for 'apartment-1.html' to 'apartment-9.html'
 app.get('/apartment-:id.html', function (req, res) {
     const apartmentId = req.params.id;
