@@ -1,0 +1,193 @@
+{
+    "title": "Sozopol rental apartments",
+    "subHeader": {
+        "email": "plamen@plasico.com",
+        "address": "str.Odessa 38 Sozopol, BG 8130"
+    },
+    "nav": {
+        "home": "Home",
+        "apartments": "Apartments",
+        "details": "Details",
+        "contact": "Contact Us",
+        "schedule": "Schedule a visit"
+    },
+    "banner": [
+        {
+            "location": "Toronto, Canada",
+            "headline": "Hurry! Get the Best Villa for you"
+        },
+        {
+            "location": "Melbourne, Australia",
+            "headline": "Be Quick! Get the best villa in town"
+        },
+        {
+            "location": "Miami, South Florida",
+            "headline": "Act Now! Get the highest level penthouse"
+        }
+    ],
+    "featuredSection": {
+        "title": "| Featured",
+        "headline": "Best Apartment & Sea view",
+        "accordion": [
+            {
+                "title": "Best useful links?",
+                "content": "Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it."
+            },
+            {
+                "title": "How does this work?",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "Why is Villa Agency the best?",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "info": [
+            {
+                "title": "250 m2",
+                "subtitle": "Total Flat Space"
+            },
+            {
+                "title": "Contract",
+                "subtitle": "Contract Ready"
+            },
+            {
+                "title": "Payment",
+                "subtitle": "Payment Process"
+            },
+            {
+                "title": "Safety",
+                "subtitle": "24/7 Under Control"
+            }
+        ]
+    },
+    "funFacts": [
+        {
+            "number": "34",
+            "description": "Buildings Finished Now"
+        },
+        {
+            "number": "12",
+            "description": "Years Experience"
+        },
+        {
+            "number": "24",
+            "description": "Awards Won 2023"
+        }
+    ],
+    "propertiesSection": {
+        "title": "| Adventures",
+        "headline": "A Complete Guide to the City of Sozopol",
+        "properties": [
+            {
+                "imageAlt": "food",
+                "category": "Guide",
+                "title": "A Complete Guide to the City of Sozopol",
+                "description": "A Walk Through the City of Arts and Sciences."
+            },
+            {
+                "imageAlt": "food",
+                "category": "Food & Drink",
+                "title": "The best bars and restaurants!",
+                "description": "Enjoy the amazing atmosphere in these selected bars and restaurants in the area."
+            },
+            {
+                "imageAlt": "traveling",
+                "category": "Traveling",
+                "title": "Explore the sights around",
+                "description": "Discover new and unexplored places. Just choose a direction."
+            },
+            {
+                "imageAlt": "culture",
+                "category": "Culture",
+                "title": "Explore ancient Sozopol",
+                "description": "Discover the unknown Sozopol. Immerse yourself in antiquity and discover the past."
+            },
+            {
+                "imageAlt": "cuisine",
+                "category": "Cuisine",
+                "title": "Get to know local culinary traditions",
+                "description": "Try the amazing traditional cuisine!"
+            },
+            {
+                "imageAlt": "nightlife",
+                "category": "Bar & Nightlife",
+                "title": "Capture the spirit of the nightlife",
+                "description": "Dive into the endless party."
+            }
+        ]
+    },
+    "contactSection": {
+        "title": "| Contact Us",
+        "headline": "Get In Touch With Our Agents",
+        "map": {
+            "phone": "+359897978877",
+            "phoneLabel": "Phone Number",
+            "email": "plamen@plasico.com",
+            "emailLabel": "Business Email"
+        },
+        "form": {
+            "nameLabel": "Full Name",
+            "namePlaceholder": "Your Name...",
+            "emailLabel": "Email Address",
+            "emailPlaceholder": "Your E-mail...",
+            "subjectLabel": "Subject",
+            "subjectPlaceholder": "Subject...",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Your Message",
+            "buttonText": "Send Message"
+        }
+    },
+    "footer": {
+        "copyright": "All rights reserved.",
+        "designBy": "Design: ivanmarinoff"
+    },
+    "propertyDetailsPage": {
+        "title": "Complete guide",
+        "pageHeading": {
+            "breadcrumb": "Home / A Complete Guide",
+            "headline": "Don't miss this!"
+        },
+        "mainContent": {
+            "category": "Guide",
+            "headline": "A Walk Through the City of Arts and Sciences",
+            "content": "Valencia is a vibrant city, full of history and tradition, yet at the same time modern and avant-garde. Located on the east coast of Spain, Valencia has a Mediterranean climate that invites you to enjoy the city all year round. It is the third largest city in Spain, and its port is one of the most important in the Mediterranean. The history of Valencia is ancient and rich. It was founded by the Romans in 138 BC and was later occupied by Visigoths, Arabs, and finally by Christians in the 13th century. Each of these peoples left their mark on the city’s architecture and culture. From the medieval towers to the modernist jewels and the bold contemporary design of the City of Arts and Sciences, Valencia is a city of contrasts where the old meets the new. Valencia boasts a privileged coastline with several golden sand beaches..."
+        },
+        "accordion": [
+            {
+                "title": "Best useful links?",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "How does this work?",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "Why is Villa the best?",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "infoTable": [
+            {
+                "title": "Menu",
+                "subtitle": "Bulgarian/English"
+            },
+            {
+                "title": "Currency",
+                "subtitle": "BGN/EUR"
+            },
+            {
+                "title": "Payment",
+                "subtitle": "Cash/POS"
+            },
+            {
+                "title": "Tips",
+                "subtitle": "~ 5% at will"
+            }
+        ],
+        "footer": {
+            "copyright": "All rights reserved.",
+            "designBy": "Design: ivanmarinoff"
+        }
+    }
+}

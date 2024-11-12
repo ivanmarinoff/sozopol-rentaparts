@@ -11,14 +11,14 @@
     <title>Villa Agency - Property Detail Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="static/css/fontawesome.css">
-    <link rel="stylesheet" href="static/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="static/css/owl.css">
-    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="../static/css/owl.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!--
 
@@ -72,15 +72,15 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/" class="logo">
+                    <a href="/static" class="logo">
                         <h1>Apartments</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="properties.html">Apartments</a></li>
-                        <li><a href="property-details.html">Details</a></li>
+                        <li><a href="/static" class="active">Home</a></li>
+                        <li><a href="../properties.html">Apartments</a></li>
+                        <li><a href="../property-details.html">Details</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                     </ul>
@@ -95,12 +95,12 @@
 </header>
 <!-- ***** Header Area End ***** -->
 
-<div class="page-heading header-text">
+<div class="page-heading page-heading-2 header-text">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="breadcrumb"><a href="#">Home</a>  /  A Complete Guide</span>
-                <h3>Don't miss this!</h3>
+                <span class="breadcrumb"><a href="#">Home</a>  /  Cuisine</span>
+                <h3>look around</h3>
             </div>
         </div>
     </div>
@@ -111,37 +111,24 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="main-image">
-                    <img src="static/images/ship.jpg" alt="paella">
+                    <img src="../static/images/barbecue.jpg" alt="couple">
                 </div>
                 <div class="main-content">
-                    <span class="category">Guide</span>
-                    <h4>A Walk Through the City of Arts and Sciences</h4>
+                    <span class="category">Cuisine</span>
+                    <h4>Traditional Bulgarian cuisine</h4>
                     <li>
-                        Valencia is a vibrant city, full of history and tradition, yet at the same time modern and
-                        avant-garde. Located on the east coast of Spain, Valencia has a Mediterranean climate that
-                        invites you to enjoy the city all year round. It is the third largest city in Spain, and its
-                        port is one of the most important in the Mediterranean.
-                        The history of Valencia is ancient and rich. It was founded by the Romans in 138 BC and was
-                        later occupied by Visigoths, Arabs, and finally by Christians in the 13th century. Each of these
-                        peoples left their mark on the city’s architecture and culture. From the medieval towers to the
-                        modernist jewels and the bold contemporary design of the City of Arts and Sciences, Valencia is
-                        a city of contrasts where the old meets the new.
+                        Bulgarian cuisine is part of the cuisine of Southeast Europe, sharing characteristics with other
+                        Balkan cuisines. Bulgarian cooking traditions are diverse because of geographical factors such
+                        as climatic conditions suitable for a variety of vegetables, herbs, and fruit. Aside from the
+                        variety of local Bulgarian dishes, Bulgarian cuisine shares a number of dishes with its
+                        neighboring countries, in particular with Turkish and Greek cuisine.
 
-
-                        An Oasis in the City
-                        Valencia boasts a privileged coastline with several golden sand beaches. The most famous is
-                        Malvarrosa Beach, which stretches along the city’s seafront promenade. Here you’ll find a lively
-                        restaurant and bar scene, as well as a host of water activities to enjoy.
-                        Just north of Malvarrosa is Patacona Beach. Less crowded but equally charming, Patacona offers a
-                        quieter alternative to the bustling Malvarrosa. It is especially known for its chiringuitos,
-                        small beach bars where you can enjoy a cold beer and tapas while watching the sunset over the
-                        Mediterranean.
-                        To the south of the city, you’ll find the beaches of Pinedo and El Saler, surrounded by the
-                        Albufera Natural Park. These beaches are quieter and offer a more natural environment. Moreover,
-                        El Saler is known for its golf course, considered one of the best in Spain. In any case,
-                        Valencia’s beaches are the perfect place to relax and soak up the Spanish sun.
-
-
+                        Bulgarian cuisine includes a significant contribution from Ottoman cuisine, and therefore
+                        shares a number of dishes with Middle Eastern cuisine, including moussaka, gyuvetch, kyufte,
+                        baklava, ayran, and shish kebab.Bulgarian food often incorporates salads as appetizers
+                        and is also noted for the prominence of dairy products, wines, and other alcoholic drinks such
+                        as rakia. The cuisine also features a variety of soups, such as the cold soup tarator, and
+                        pastries, such as the filo dough-based banitsa, pita, and the various types of börek.
                     </li>
                     <!--                    <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.-->
                     <!--                        TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"-->
@@ -215,19 +202,19 @@
                 <div class="info-table">
                     <ul>
                         <li>
-                            <img src="static/images/cook-book.png" alt="" style="max-width: 52px;">
+                            <img src="../static/images/cook-book.png" alt="" style="max-width: 52px;">
                             <h4>Menu<br><span>Bulgarian/English</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/bill.png" alt="" style="max-width: 52px;">
+                            <img src="../static/images/bill.png" alt="" style="max-width: 52px;">
                             <h4>Currency<br><span>BGN/EUR</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/calculate.png" alt="" style="max-width: 52px;">
+                            <img src="../static/images/calculate.png" alt="" style="max-width: 52px;">
                             <h4>Payment<br><span>Cash/POS</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/tips.png" alt="" style="max-width: 52px;">
+                            <img src="../static/images/tips.png" alt="" style="max-width: 52px;">
                             <h4>Tips<br><span>~ 5% at will</span></h4>
                         </li>
                     </ul>
@@ -382,12 +369,12 @@
 
 <!-- Scripts -->
 <!-- Bootstrap core JavaScript -->
-<script src="static/jquery/jquery.min.js"></script>
-<script src="static/bootstrap/js/bootstrap.min.js"></script>
-<script src="static/js/isotope.min.js"></script>
-<script src="static/js/owl-carousel.js"></script>
-<script src="static/js/counter.js"></script>
-<script src="static/js/custom.js"></script>
+<script src="../static/jquery/jquery.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/js/isotope.min.js"></script>
+<script src="../static/js/owl-carousel.js"></script>
+<script src="../static/js/counter.js"></script>
+<script src="../static/js/custom.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(function () {
