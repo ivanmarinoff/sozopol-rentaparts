@@ -158,6 +158,10 @@ app.get('/cuisine.html', function (req, res){
     res.sendFile(path.join(__dirname + '/cuisine.html'));
 });
 
+app.get('/complete-guide.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/complete-guide.html'));
+});
+
 app.get('/bar&nightlife.html', function (req, res){
     res.sendFile(path.join(__dirname + '/bar&nightlife.html'));
 });
