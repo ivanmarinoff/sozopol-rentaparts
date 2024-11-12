@@ -72,20 +72,20 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/static" class="logo">
-                        <h1>Apartments</h1>
+                    <a href="/" class="logo">
+                        <h1>Апартаменти</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/static" class="active">Home</a></li>
-                        <li><a href="../properties.html">Apartments</a></li>
-                        <li><a href="../property-details.html">Details</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                        <li><a href="/" class="active">Начало</a></li>
+                        <li><a href="/bg/properties.html">Апартаменти</a></li>
+                        <li><a href="/bg/property-details.html">Детайли</a></li>
+                        <li><a href="/bg/contact.html">Свържете се с нас</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i> Планирайте посещение</a></li>
                     </ul>
                     <a class='menu-trigger'>
-                        <span>Menu</span>
+                        <span>Меню</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -95,12 +95,12 @@
 </header>
 <!-- ***** Header Area End ***** -->
 
-<div class="page-heading header-text">
+<div class="page-heading page-heading-1 header-text">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="breadcrumb"><a href="#">Home</a>  /  Apartment 1</span>
-                <h3>Single Property</h3>
+                <span class="breadcrumb"><a href="#">Home</a>  /  Traveling</span>
+                <h3>look around</h3>
             </div>
         </div>
     </div>
@@ -111,21 +111,32 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="main-image">
-                    <img src="../static/images/single-property.jpg" alt="">
+                    <img src="../static/images/church.jpg" alt="couple">
                 </div>
                 <div class="main-content">
-                    <span class="category">Apartment 1</span>
-                    <h4>24 New Street Miami, OR 24560</h4>
-                    <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.
-                        TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"
-                                                       target="_blank">best free CSS templates</a> in the world. Please
-                        tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr
-                        succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
+                    <span class="category">Traveling</span>
+                    <h4>The City of Arts and Sciences!</h4>
+                    <li>
+                        A small town at the Black Sea coast. The oldest Hellenic colony on the Black sea shore was
+                        founded back in the 7th century BC on a small peninsula. The city was called Apollonia. Today,
+                        lots of well conserved monuments are telling stories about the rich past and the tremendous
+                        culture of Sozopol. It's most of all, a majestic temple of Apollo, with an impressive statue of
+                        the god, made of bronze by Kalamis - one of the most famous sculptors of Athens in the 5th
+                        century BC. The medieval church of the Virgin Mary (14th century) was put in the registers of
+                        UNESCO among the important and precious monuments of world culture, because of it's iconostasis
+                        and the remarkable woodcarving made by local masters. The old town is still there with it's
+                        picturesque small streets and the old houses with the typical old Bulgarian architecture!
+                    </li>
+                    <!--                    <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.-->
+                    <!--                        TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"-->
+                    <!--                                                       target="_blank">best free CSS templates</a> in the world. Please-->
+                    <!--                        tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr-->
+                    <!--                        succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.-->
 
-                        <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search
-                        engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate
-                        Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard
-                        PBR&B DSA poutine neutra cardigan hoodie pop-up.</p>
+                    <!--                        <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search-->
+                    <!--                        engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate-->
+                    <!--                        Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard-->
+                    <!--                        PBR&B DSA poutine neutra cardigan hoodie pop-up.</p>-->
                 </div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -188,20 +199,20 @@
                 <div class="info-table">
                     <ul>
                         <li>
-                            <img src="../static/images/info-icon-01.png" alt="" style="max-width: 52px;">
-                            <h4>450 m2<br><span>Total Flat Space</span></h4>
+                            <img src="../static/images/cook-book.png" alt="" style="max-width: 52px;">
+                            <h4>Menu<br><span>Bulgarian/English</span></h4>
                         </li>
                         <li>
-                            <img src="../static/images/info-icon-02.png" alt="" style="max-width: 52px;">
-                            <h4>Contract<br><span>Contract Ready</span></h4>
+                            <img src="../static/images/bill.png" alt="" style="max-width: 52px;">
+                            <h4>Currency<br><span>BGN/EUR</span></h4>
                         </li>
                         <li>
-                            <img src="../static/images/info-icon-03.png" alt="" style="max-width: 52px;">
-                            <h4>Payment<br><span>Payment Process</span></h4>
+                            <img src="../static/images/calculate.png" alt="" style="max-width: 52px;">
+                            <h4>Payment<br><span>Cash/POS</span></h4>
                         </li>
                         <li>
-                            <img src="../static/images/info-icon-04.png" alt="" style="max-width: 52px;">
-                            <h4>Safety<br><span>24/7 Under Control</span></h4>
+                            <img src="../static/images/tips.png" alt="" style="max-width: 52px;">
+                            <h4>Tips<br><span>~ 5% at will</span></h4>
                         </li>
                     </ul>
                 </div>

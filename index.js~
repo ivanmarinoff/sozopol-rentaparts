@@ -178,12 +178,12 @@ app.get('/bg/property-details.html', function (req, res){
     res.sendFile(path.join(__dirname + '/bg' + '/property-details.html'));
 });
 
-app.get('/bg/contact.html', function (req, res){
+app.get('/contact.html', function (req, res){
     res.sendFile(path.join(__dirname  + '/bg' +'/contact.html'));
 });
 
-app.get('/en/contact.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/contact.html'));
+app.get('/contact.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/contact.html'));
 });
 app.get('/food&drink.html', function (req, res){
     res.sendFile(path.join(__dirname + '/food&drink.html'));
