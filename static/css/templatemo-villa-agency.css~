@@ -140,7 +140,7 @@ body {
 .section-heading h2 {
   font-size: 40px;
   font-weight: 700;
-  text-transform: inherit;
+  text-transform: math-auto;
   margin-top: 20px;
   line-height: 56px;
 }
