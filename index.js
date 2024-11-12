@@ -158,6 +158,10 @@ app.get('/cuisine.html', function (req, res){
     res.sendFile(path.join(__dirname + '/cuisine.html'));
 });
 
+app.get('/bar&nightlife.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bar&nightlife.html'));
+});
+
 // Dynamic route for 'apartment-1.html' to 'apartment-9.html'
 app.get('/apartment-:id.html', function (req, res) {
     const apartmentId = req.params.id;
