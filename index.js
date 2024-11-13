@@ -149,7 +149,7 @@ if (typeof window !== 'undefined') {
 
 
 app.get('/', (req, res) => {
-    res.redirect('/bg' + '');
+    res.redirect('/bg' + '#');
 });
 
 app.get('/en', (req, res) => {
