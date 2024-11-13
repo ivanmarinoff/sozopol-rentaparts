@@ -150,8 +150,7 @@ if (typeof window !== 'undefined') {
 
 // Set up your index route
 app.get('/', (req, res) => {
-    // Redirect to English by default
-    res.redirect('/bg');
+    res.sendFile(path.join(__dirname , 'bg', 'index.html'));
 });
 
 app.get('/en', (req, res) => {
