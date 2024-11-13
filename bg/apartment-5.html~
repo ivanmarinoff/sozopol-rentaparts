@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+<link rel="manifest" href="/manifest.json" crossorigin="use-credentials"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -11,22 +11,16 @@
     <title>Villa Agency - Property Detail Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="static/css/fontawesome.css">
-    <link rel="stylesheet" href="static/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="static/css/owl.css">
-    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="../static/css/owl.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <!--
 
-    TemplateMo 591 villa agency
-
-    https://templatemo.com/tm-591-villa-agency
-
-    -->
 </head>
 
 <body>
@@ -55,6 +49,7 @@
             </div>
             <div class="col-lg-4 col-md-4">
                 <ul class="social-links">
+                    <li><a href="/en/#"><img src="../static/images/uk.png" alt="eng"></a></li>
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
@@ -73,19 +68,19 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="/" class="logo">
-                        <h1>Apartments</h1>
+                        <h1>Апартаменти</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="properties.html">Apartments</a></li>
-                        <li><a href="property-details.html">Details</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                        <li><a href="/" class="active">Начало</a></li>
+                        <li><a href="/bg/properties.html">Апартаменти</a></li>
+                        <li><a href="/bg/property-details.html">Детайли</a></li>
+                        <li><a href="/bg/contact.html">Свържете се с нас</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i> Планирайте посещение</a></li>
                     </ul>
                     <a class='menu-trigger'>
-                        <span>Menu</span>
+                        <span>Меню</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -95,12 +90,12 @@
 </header>
 <!-- ***** Header Area End ***** -->
 
-<div class="page-heading page-heading-1 header-text">
+<div class="page-heading header-text">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="breadcrumb"><a href="#">Home</a>  /  Cuisine</span>
-                <h3>look around</h3>
+                <span class="breadcrumb"><a href="#">Home</a>  /  Apartment 5</span>
+                <h3>Single Property</h3>
             </div>
         </div>
     </div>
@@ -111,35 +106,21 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="main-image">
-                    <img src="static/images/barbecue.jpg" alt="couple">
+                    <img src="../static/images/single-property.jpg" alt="">
                 </div>
                 <div class="main-content">
-                    <span class="category">Cuisine</span>
-                    <h4>Traditional Bulgarian cuisine</h4>
-                    <li>
-                        Bulgarian cuisine is part of the cuisine of Southeast Europe, sharing characteristics with other
-                        Balkan cuisines. Bulgarian cooking traditions are diverse because of geographical factors such
-                        as climatic conditions suitable for a variety of vegetables, herbs, and fruit. Aside from the
-                        variety of local Bulgarian dishes, Bulgarian cuisine shares a number of dishes with its
-                        neighboring countries, in particular with Turkish and Greek cuisine.
+                    <span class="category">Apartment 5</span>
+                    <h4>24 New Street Miami, OR 24560</h4>
+                    <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.
+                        TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"
+                                                       target="_blank">best free CSS templates</a> in the world. Please
+                        tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr
+                        succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
 
-                        Bulgarian cuisine includes a significant contribution from Ottoman cuisine, and therefore
-                        shares a number of dishes with Middle Eastern cuisine, including moussaka, gyuvetch, kyufte,
-                        baklava, ayran, and shish kebab.Bulgarian food often incorporates salads as appetizers
-                        and is also noted for the prominence of dairy products, wines, and other alcoholic drinks such
-                        as rakia. The cuisine also features a variety of soups, such as the cold soup tarator, and
-                        pastries, such as the filo dough-based banitsa, pita, and the various types of börek.
-                    </li>
-                    <!--                    <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.-->
-                    <!--                        TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"-->
-                    <!--                                                       target="_blank">best free CSS templates</a> in the world. Please-->
-                    <!--                        tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr-->
-                    <!--                        succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.-->
-
-                    <!--                        <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search-->
-                    <!--                        engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate-->
-                    <!--                        Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard-->
-                    <!--                        PBR&B DSA poutine neutra cardigan hoodie pop-up.</p>-->
+                        <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search
+                        engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate
+                        Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard
+                        PBR&B DSA poutine neutra cardigan hoodie pop-up.</p>
                 </div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -202,20 +183,20 @@
                 <div class="info-table">
                     <ul>
                         <li>
-                            <img src="static/images/cook-book.png" alt="" style="max-width: 52px;">
-                            <h4>Menu<br><span>Bulgarian/English</span></h4>
+                            <img src="../static/images/info-icon-01.png" alt="" style="max-width: 52px;">
+                            <h4>450 m2<br><span>Total Flat Space</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/bill.png" alt="" style="max-width: 52px;">
-                            <h4>Currency<br><span>BGN/EUR</span></h4>
+                            <img src="../static/images/info-icon-02.png" alt="" style="max-width: 52px;">
+                            <h4>Contract<br><span>Contract Ready</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/calculate.png" alt="" style="max-width: 52px;">
-                            <h4>Payment<br><span>Cash/POS</span></h4>
+                            <img src="../static/images/info-icon-03.png" alt="" style="max-width: 52px;">
+                            <h4>Payment<br><span>Payment Process</span></h4>
                         </li>
                         <li>
-                            <img src="static/images/tips.png" alt="" style="max-width: 52px;">
-                            <h4>Tips<br><span>~ 5% at will</span></h4>
+                            <img src="../static/images/info-icon-04.png" alt="" style="max-width: 52px;">
+                            <h4>Safety<br><span>24/7 Under Control</span></h4>
                         </li>
                     </ul>
                 </div>
@@ -369,12 +350,12 @@
 
 <!-- Scripts -->
 <!-- Bootstrap core JavaScript -->
-<script src="static/jquery/jquery.min.js"></script>
-<script src="static/bootstrap/js/bootstrap.min.js"></script>
-<script src="static/js/isotope.min.js"></script>
-<script src="static/js/owl-carousel.js"></script>
-<script src="static/js/counter.js"></script>
-<script src="static/js/custom.js"></script>
+<script src="../static/jquery/jquery.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/js/isotope.min.js"></script>
+<script src="../static/js/owl-carousel.js"></script>
+<script src="../static/js/counter.js"></script>
+<script src="../static/js/custom.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(function () {

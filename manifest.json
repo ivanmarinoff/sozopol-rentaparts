@@ -1,0 +1,75 @@
+{
+  "name": "rental_site",
+  "short_name": "Rental site",
+  "description": "This is a Rental site on my portfolio.",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://cookieinfoscript.com/*",
+    "*://google-analytics.com/*",
+    "*://tagmanager.google.com/*",
+    "*://fonts.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "static/js/gtag.js",
+        "static/js/head_tagscript.js",
+        "static/js/jquery.js",
+        "static/js/owl-carousel.js",
+        "static/bootstrap/js/bootstrap.min.js",
+        "static/js/counter.js",
+        "static/js/isotope.min.js",
+        "static/js/manifest.js",
+        "static/js/custom.js",
+        "static/js/body_tagscript.js",
+        "static/js/cookieinfo.min.js",
+        "https://code.jquery.com/jquery-3.6.0.min.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "static/js/background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "static/js/gtag.js",
+        "static/js/head_tagscript.js",
+        "static/js/jquery.js",
+        "static/js/owl-carousel.js",
+        "static/bootstrap/js/bootstrap.min.js",
+        "static/js/counter.js",
+        "static/js/isotope.min.js",
+        "static/js/manifest.js",
+        "static/js/custom.js",
+        "static/js/body_tagscript.js",
+        "static/js/cookieinfo.min.js",
+        "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'nonce-randomNonceValue'; object-src 'self'; 'unsafe-inline' 'unsafe-eval' https://cookieinfoscript.com https://google-analytics.com; object-src 'self';",
+  "background_color": "#3367D6",
+  "theme_color": "#3367D6",
+  "icons": [
+    {
+      "src": "/static/fonts/fontawesome-webfont.svg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
