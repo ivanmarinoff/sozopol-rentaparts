@@ -127,55 +127,54 @@ app.get('/manifest.json', function (req, res) {
 });
 
 
-// Redirect based on the stored language preference
-// Check if we are in the browser environment
-// if (typeof window !== 'undefined') {
-//     // Set the language preference
-//     function setLanguage(language) {
-//         localStorage.setItem('language', language);
-//     }
-//
-//     // Redirect based on the stored language preference
-//     window.addEventListener('DOMContentLoaded', () => {
-//         const savedLanguage = localStorage.getItem('language') || 'en';
-//         const currentPath = window.location.pathname;
-//
-//         if (savedLanguage === 'bg' && !currentPath.startsWith('/bg')) {
-//             window.location.href = '/bg';
-//         } else if (savedLanguage === 'en' && !currentPath.startsWith('/en')) {
-//             window.location.href = '/en';
-//         }
-//     });
-// }
+
+if (typeof window !== 'undefined') {
+    // Set the language preference
+    function setLanguage(language) {
+        localStorage.setItem('language', language);
+    }
+
+    // Redirect based on the stored language preference
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedLanguage = localStorage.getItem('language') || 'en';
+        const currentPath = window.location.pathname;
+
+        if (savedLanguage === 'bg' && !currentPath.startsWith('/bg')) {
+            window.location.href = '/bg';
+        } else if (savedLanguage === 'en' && !currentPath.startsWith('/en')) {
+            window.location.href = '/en';
+        }
+    });
+}
 
 
 // Set up your index route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname +'/bg' + '/index.html'));
+    res.sendFile(path.join(__dirname , '/bg', '/index.html'));
 });
 
 app.get('/en', (req, res) => {
-    res.sendFile(path.join(__dirname + '/en' + '/index.html'));
+    res.sendFile(path.join(__dirname, '/en', '/index.html'));
 });
 
 app.get('/bg', (req, res) => {
-    res.sendFile(path.join(__dirname + '/bg' + '/index.html'));
+    res.sendFile(path.join(__dirname, '/bg', '/index.html'));
 });
 
 app.get('/en/properties.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/properties.html'));
+    res.sendFile(path.join(__dirname, '/en', '/properties.html'));
 });
 
 app.get('/bg/properties.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/properties.html'));
+    res.sendFile(path.join(__dirname, '/bg', '/properties.html'));
 });
 
 app.get('/en/property-details.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/property-details.html'));
+    res.sendFile(path.join(__dirname, '/en', '/property-details.html'));
 });
 
 app.get('/bg/property-details.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/property-details.html'));
+    res.sendFile(path.join(__dirname, '/bg', '/property-details.html'));
 });
 
 app.get('/bg/contact.html', function (req, res){
