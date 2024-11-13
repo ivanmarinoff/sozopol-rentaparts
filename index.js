@@ -148,9 +148,8 @@ if (typeof window !== 'undefined') {
 }
 
 
-// Set up your index route
 app.get('/', (req, res) => {
-    res.redirect('/bg');
+    res.redirect('/bg' + '/');
 });
 
 app.get('/en', (req, res) => {
