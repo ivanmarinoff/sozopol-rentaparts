@@ -150,7 +150,7 @@ if (typeof window !== 'undefined') {
 
 // Set up your index route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname , 'bg', 'index.html'));
+    res.redirect('/bg');
 });
 
 app.get('/en', (req, res) => {
