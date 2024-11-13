@@ -184,36 +184,72 @@ app.get('/bg/contact.html', function (req, res){
 app.get('/en/contact.html', function (req, res){
     res.sendFile(path.join(__dirname + '/en' + '/contact.html'));
 });
-app.get('/food&drink.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/food&drink.html'));
-});
-app.get('/traveling.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/traveling.html'));
+app.get('/bg/food&drink.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/food&drink.html'));
 });
 
-app.get('/culture.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/culture.html'));
+app.get('/en/food&drink.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/food&drink.html'));
 });
 
-app.get('/cuisine.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/cuisine.html'));
+app.get('/bg/traveling.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/traveling.html'));
 });
 
-app.get('/complete-guide.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/complete-guide.html'));
+app.get('/en/traveling.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/traveling.html'));
 });
 
-app.get('/bar&nightlife.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bar&nightlife.html'));
+app.get('/bg/culture.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/culture.html'));
+});
+
+app.get('/en/culture.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/culture.html'));
+});
+
+app.get('/bg/cuisine.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/cuisine.html'));
+});
+
+app.get('/en/cuisine.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/cuisine.html'));
+});
+
+app.get('/bg/complete-guide.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/complete-guide.html'));
+});
+
+app.get('/en/complete-guide.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/complete-guide.html'));
+});
+
+app.get('/bg/bar&nightlife.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bg' + '/bar&nightlife.html'));
+});
+
+app.get('/en/bar&nightlife.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/en' + '/bar&nightlife.html'));
 });
 
 // Dynamic route for 'apartment-1.html' to 'apartment-9.html'
-app.get('/apartment-:id.html', function (req, res) {
+app.get('/bg/apartment-:id.html', function (req, res) {
     const apartmentId = req.params.id;
 
     // Ensure 'id' is a number between 1 and 9 to prevent invalid access
     if (apartmentId >= 1 && apartmentId <= 9) {
-        res.sendFile(path.join(__dirname, `apartment-${apartmentId}.html`));
+        res.sendFile(path.join(__dirname,  '/bg', `apartment-${apartmentId}.html`));
+    } else {
+        res.status(404).send('Apartment not found');
+    }
+});
+
+app.get('/en/apartment-:id.html', function (req, res) {
+    const apartmentId = req.params.id;
+
+    // Ensure 'id' is a number between 1 and 9 to prevent invalid access
+    if (apartmentId >= 1 && apartmentId <= 9) {
+        res.sendFile(path.join(__dirname, '/en', `apartment-${apartmentId}.html`));
     } else {
         res.status(404).send('Apartment not found');
     }
