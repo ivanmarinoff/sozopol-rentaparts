@@ -150,15 +150,15 @@ if (typeof window !== 'undefined') {
 
 // Set up your index route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname , 'bg', 'index.html'));
+    res.sendFile(path.join(__dirname , '/bg', '/index.html'));
 });
 
 app.get('/en', (req, res) => {
-    res.sendFile(path.join(__dirname, 'en', 'index.html'));
+    res.sendFile(path.join(__dirname, '/en', '/index.html'));
 });
 
 app.get('/bg', (req, res) => {
-    res.sendFile(path.join(__dirname, 'bg', 'index.html'));
+    res.sendFile(path.join(__dirname, '/bg', '/index.html'));
 });
 
 app.get('/en/properties.html', function (req, res){
