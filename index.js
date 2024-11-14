@@ -58,7 +58,7 @@ app.get('/manifest.json', function (req, res) {
         short_name: "Rental site",
         description: "This is a Rental site on my portfolio.",
         version: "1.0.0",
-        start_url: "/",
+        start_url: "https://sozopol-rentaparts.onrender.com/bg",
         display: "standalone",
         orientation: "any",
         permissions: ["storage", "activeTab", "scripting"],
