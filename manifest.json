@@ -67,7 +67,7 @@
   "theme_color": "#3367D6",
   "icons": [
     {
-      "src": "/static/fonts/fontawesome-webfont.svg",
+      "src": "/static/webfonts/font-awesome.svg",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -50,8 +50,8 @@ const fs = require('fs'); // Import the file system module
 
 app.get('/manifest.json', function (req, res) {
     const iconUrl = isDesktop(req.useragent.platform)
-        ? '/static/fonts/fontawesome-webfont.svg'
-        : '/static/fonts/fontawesome-webfont.svg';
+        ? '/static/webfonts/font-awesome.svg'
+        : '/static/webfonts/font-awesome.svg';
 
     const manifest = {
         name: "rental_site",
