@@ -43,14 +43,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add event listener for flap transition
     st.flap.addEventListener('transitionend', () => {
-        if (st.choice1.checked) {
-            st.toggle.style.transform = 'rotateY(15deg)';
-            setTimeout(() => (st.toggle.style.transform = ''), 400);
-        } else {
-            st.toggle.style.transform = 'rotateY(-15deg)';
-            setTimeout(() => (st.toggle.style.transform = ''), 400);
-        }
-    });
+    // Flip the toggle regardless of the current choice
+    if (st.choice1.checked) {
+        st.toggle.style.transform = 'rotateY(15deg)'; // Clockwise rotation
+    } else {
+        st.toggle.style.transform = 'rotateY(-15deg)'; // Counterclockwise rotation
+    }
+
+    // Reset the transformation after 400ms
+    setTimeout(() => {
+        st.toggle.style.transform = '';
+    }, 400);
+});
+
+// Add a click listener to toggle the choice regardless of the current state
+st.toggle.addEventListener('click', () => {
+    if (st.choice1.checked) {
+        // Switch to choice2
+        st.choice2.checked = true;
+        st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+    } else {
+        // Switch to choice1
+        st.choice1.checked = true;
+        st.flap.children[0].textContent = st.choice1.nextElementSibling.textContent;
+    }
+
+    // Manually trigger the transitionend logic for the flip
+//    st.flap.dispatchEvent(new Event('transitionend'));
+});
+
 
     // Handle clicks on labels
     st.clickHandler = (e) => {
