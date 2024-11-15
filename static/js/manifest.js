@@ -3,7 +3,7 @@ function isDesktop() {
 }
 
 // Construct the manifest based on device type
-let iconUrl = isDesktop() ? '/static/fonts/fontawesome-webfont.svg' : '/static/fonts/fontawesome-webfont.svg';
+let iconUrl = isDesktop() ? '/static/webfonts/font-awesome.svg' : '/static/webfonts/font-awesome.svg';
 
 // Generate the manifest content dynamically
 let manifest = {
