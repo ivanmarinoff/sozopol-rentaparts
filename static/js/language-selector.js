@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check if the required elements exist before proceeding
     if (!st.flap || !st.toggle || !st.choice1 || !st.choice2) {
-        console.error('Error: Required elements are missing from the DOM.');
+//        console.error('Error: Required elements are missing from the DOM.');
         return; // Stop execution if elements are missing
     }
 
