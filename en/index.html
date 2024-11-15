@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="manifest" href="/manifest.json" crossorigin="use-credentials"/>
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials"/>
     <script src="../static/js/manifest.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,6 +10,17 @@
           rel="stylesheet">
 
     <title>Sozopol rental apartments</title>
+    <script>
+        function isMobileDevice() {
+            return window.matchMedia("(max-width: 768px)").matches;
+        }
+
+        // Run check before the page fully loads
+        if (isMobileDevice()) {
+            // Redirect or load mobile-specific language file
+            window.location.href = './selection.html'; // Adjust as needed
+        }
+    </script>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -170,7 +181,8 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                              data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                After receiving your <strong>reservation</strong>, the system will check and get back to you immediately.
+                                After receiving your <strong>reservation</strong>, the system will check and get back to
+                                you immediately.
                             </div>
                         </div>
                     </div>

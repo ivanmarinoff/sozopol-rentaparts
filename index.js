@@ -156,6 +156,11 @@ app.get('/', (req, res) => {
     res.redirect('/bg' + '/');
 });
 
+
+app.get('/lang', function (req, res){
+    res.sendFile(path.join(__dirname, 'lang', '/selection.html'));
+});
+
 app.get('/en', (req, res) => {
     res.sendFile(path.join(__dirname, 'en', 'index.html'));
 });
