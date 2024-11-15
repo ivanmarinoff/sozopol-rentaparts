@@ -36,10 +36,10 @@ st.choice2 = document.querySelector('#choice2');
 st.flap.addEventListener('transitionend', () => {
 
     if (st.choice1.checked) {
-        st.toggle.style.transform = 'rotateY(-15deg)';
+        st.toggle.style.transform = 'rotateY(15deg)';
         setTimeout(() => st.toggle.style.transform = '', 400);
     } else {
-        st.toggle.style.transform = 'rotateY(15deg)';
+        st.toggle.style.transform = 'rotateY(-15deg)';
         setTimeout(() => st.toggle.style.transform = '', 400);
     }
 
@@ -51,6 +51,11 @@ st.clickHandler = (e) => {
         setTimeout(() => {
             st.flap.children[0].textContent = e.target.textContent;
         }, 250);
+        // Trigger the corresponding radio button
+        const associatedInput = document.querySelector(`#${e.target.htmlFor}`);
+        if (associatedInput) {
+            associatedInput.checked = true;
+        }
     }
 }
 
