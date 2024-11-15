@@ -13,7 +13,7 @@ if (!deviceType) {
     // Redirect based on device type
     if (isMobile) {
         window.location.href = '/lang'; // Mobile-specific page
-    } else {
+    } else if (isMobileDevice()) {
         window.location.href = '/bg'; // Desktop-specific page
     } else {
         window.location.href = '/en';
