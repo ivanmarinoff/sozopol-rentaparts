@@ -1,8 +1,8 @@
 :root {
     --accent: #ebf1ef;
-    --border-width: 16px;
+    --border-width: 6px;
     --border-radius: 55px;
-    --font-size: 80px;
+    --font-size: 55px;
 }
 
 body {
