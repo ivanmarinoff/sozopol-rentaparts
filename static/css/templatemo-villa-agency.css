@@ -764,7 +764,7 @@ Banner Style
   font-weight: 500;
   text-transform: capitalize;
   padding: 6px 15px;
-  display: inline-block;
+  display: table-cell;
   margin-bottom: 30px;
 }
 
@@ -1745,6 +1745,7 @@ body {
   }
   .header-area .main-nav .logo h1 {
     line-height: 100px;
+    font-size: 22px;
   }
   .background-header .main-nav .logo h1 {
     line-height: 80px;
@@ -1828,6 +1829,12 @@ body {
   .best-deal .info-table ul li span {
     float: right !important;
     width: auto !important;
+  }
+  .main-banner .owl-nav .owl-prev i {
+  left: 10px;
+  }
+ .main-banner .owl-nav .owl-next i {
+  right: 10px;
   }
 }
 
