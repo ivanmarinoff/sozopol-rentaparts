@@ -15,7 +15,10 @@ if (!deviceType) {
         window.location.href = '/lang'; // Mobile-specific page
     } else {
         window.location.href = '/bg'; // Desktop-specific page
+    } else {
+        window.location.href = '/en';
     }
+
 } else {
     // If device type is already stored, do nothing or use it for other logic
     console.log(`Device type already determined: ${deviceType}`);
