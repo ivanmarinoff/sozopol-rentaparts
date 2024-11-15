@@ -1833,8 +1833,11 @@ body {
   .main-banner .owl-nav .owl-prev i {
   left: 10px;
   }
- .main-banner .owl-nav .owl-next i {
+  .main-banner .owl-nav .owl-next i {
   right: 10px;
+  }
+  .section-heading h2 {
+  font-size: 32px;
   }
 }
 
