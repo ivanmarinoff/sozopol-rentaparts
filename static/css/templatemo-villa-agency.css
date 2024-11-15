@@ -1758,6 +1758,8 @@ body {
   }
   .main-banner .item h2 {
     width: 100%;
+    font-size: 30px;
+    line-height: 50px;
   }
   .featured .section-heading {
     margin-left: 0px;
