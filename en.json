@@ -1,0 +1,136 @@
+{
+    "title": "Sozopol rental apartments",
+    "meta": {
+        "ogTitle": "Sozopol rental apartments",
+        "ogDescription": "A best apartments in Sozopol for rent",
+        "ogImage": "../static/images/og-image.png"
+    },
+    "subHeader": {
+        "email": "plamen@plasico.com",
+        "address": "str.Odessa 38 Sozopol, BG 8130"
+    },
+    "nav": {
+        "home": "Home",
+        "apartments": "Apartments",
+        "details": "Details",
+        "contact": "Contact Us",
+        "schedule": "Schedule a visit"
+    },
+    "mainBanner": [
+        {
+            "category": "Sozopol, Bulgaria",
+            "headline": "Hurry! Get the Best Apartment for you"
+        },
+        {
+            "category": "Sozopol, Bulgaria",
+            "headline": "Be Quick! Get the best villa in town"
+        },
+        {
+            "category": "Sozopol, Bulgaria",
+            "headline": "Act Now! Get the highest level penthouse"
+        }
+    ],
+    "featuredSection": {
+        "title": "| Featured",
+        "headline": "Best Apartment & Sea view",
+        "accordion": [
+            {
+                "title": "The best for you",
+                "content": "Get the best apartment in the most amazing place in Sozopol with the most amazing view in the world. Then tell your friends about her."
+            },
+            {
+                "title": "How to hire?",
+                "content": "Check the calendar for available dates and make your reservation."
+            },
+            {
+                "title": "Will my booking be confirmed?",
+                "content": "After receiving your reservation, the system will check and get back to you immediately."
+            }
+        ],
+        "info": [
+            {
+                "title": "250 m2",
+                "subtitle": "Total Flat Space"
+            },
+            {
+                "title": "Contract",
+                "subtitle": "Contract Ready"
+            },
+            {
+                "title": "Payment",
+                "subtitle": "Payment Process"
+            },
+            {
+                "title": "Safety",
+                "subtitle": "24/7 Under Control"
+            }
+        ]
+    },
+    "propertiesSection": {
+        "title": "| Adventures",
+        "headline": "How to make your stay in the city of Sozopol unforgettable",
+        "properties": [
+            {
+                "imageAlt": "food",
+                "category": "Guide",
+                "title": "A Complete Guide to the City of Sozopol",
+                "description": "A Walk Through the City of Arts and Sciences."
+            },
+            {
+                "imageAlt": "food",
+                "category": "Food & Drink",
+                "title": "The best bars and restaurants!",
+                "description": "Enjoy the amazing atmosphere in these selected bars and restaurants in the area."
+            },
+            {
+                "imageAlt": "traveling",
+                "category": "Traveling",
+                "title": "Explore the sights around",
+                "description": "Discover new and unexplored places. Just choose a direction."
+            },
+            {
+                "imageAlt": "culture",
+                "category": "Culture",
+                "title": "Explore ancient Sozopol",
+                "description": "Discover the unknown Sozopol. Immerse yourself in antiquity and discover the past."
+            },
+            {
+                "imageAlt": "cuisine",
+                "category": "Cuisine",
+                "title": "Get to know local culinary traditions",
+                "description": "Try the amazing traditional cuisine!"
+            },
+            {
+                "imageAlt": "nightlife",
+                "category": "Bar & Nightlife",
+                "title": "Capture the spirit of the nightlife",
+                "description": "Dive into the endless party."
+            }
+        ]
+    },
+    "contactSection": {
+        "title": "| Contact Us",
+        "headline": "Contact us via the contact form",
+        "map": {
+            "phone": "+359897978877",
+            "phoneLabel": "Phone Number",
+            "email": "plamen@plasico.com",
+            "emailLabel": "Business Email"
+        },
+        "form": {
+            "nameLabel": "Full Name",
+            "namePlaceholder": "Your Name...",
+            "emailLabel": "Email Address",
+            "emailPlaceholder": "Your E-mail...",
+            "subjectLabel": "Subject",
+            "subjectPlaceholder": "Subject...",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Your Message",
+            "buttonText": "Send Message"
+        }
+    },
+    "footer": {
+        "copyright": "All rights reserved.",
+        "designBy": "Design: ivanmarinoff"
+    }
+}

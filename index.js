@@ -22,6 +22,7 @@ app.use((req, res, next) => {
 
 // Static file serving
 app.use('/static', express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, '.')));
 
 
 
@@ -131,137 +132,137 @@ app.get('/manifest.json', function (req, res) {
 
 
 
-if (typeof window !== 'undefined') {
-    // Set the language preference
-    function setLanguage(language) {
-        localStorage.setItem('language', language);
-    }
-
-    // Redirect based on the stored language preference
-    window.addEventListener('DOMContentLoaded', () => {
-        const savedLanguage = localStorage.getItem('language') || 'en';
-        const currentPath = window.location.pathname;
-
-        if (savedLanguage === 'bg' && !currentPath.startsWith('/bg')) {
-            window.location.href = '/bg';
-        } else if (savedLanguage === 'en' && !currentPath.startsWith('/en')) {
-            window.location.href = '/en';
-        }
-    });
-}
+//if (typeof window !== 'undefined') {
+//    // Set the language preference
+//    function setLanguage(language) {
+//        localStorage.setItem('language', language);
+//    }
+//
+//    // Redirect based on the stored language preference
+//    window.addEventListener('DOMContentLoaded', () => {
+//        const savedLanguage = localStorage.getItem('language') || 'en';
+//        const currentPath = window.location.pathname;
+//
+//        if (savedLanguage === 'bg' && !currentPath.startsWith('/bg')) {
+//            window.location.href = '/bg';
+//        } else if (savedLanguage === 'en' && !currentPath.startsWith('/en')) {
+//            window.location.href = '/en';
+//        }
+//    });
+//}
 
 
 // Set up your index route
+//app.get('/', (req, res) => {
+//    res.redirect('/bg' + '/');
+//});
+
+
+//app.get('/lang', function (req, res){
+//    res.sendFile(path.join(__dirname, 'lang', '/selection.html'));
+//});
+
+//app.get('/en', (req, res) => {
+//    res.sendFile(path.join(__dirname, 'en', 'index.html'));
+//});
+
 app.get('/', (req, res) => {
-    res.redirect('/bg' + '/');
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+//app.get('/en/properties.html', function (req, res){
+//    res.sendFile(path.join(__dirname, '/en', '/properties.html'));
+//});
 
-app.get('/lang', function (req, res){
-    res.sendFile(path.join(__dirname, 'lang', '/selection.html'));
-});
-
-app.get('/en', (req, res) => {
-    res.sendFile(path.join(__dirname, 'en', 'index.html'));
-});
-
-app.get('/bg', (req, res) => {
-    res.sendFile(path.join(__dirname, 'bg', 'index.html'));
+app.get('/properties.html', function (req, res){
+    res.sendFile(path.join(__dirname, '/properties.html'));
 });
 
-app.get('/en/properties.html', function (req, res){
-    res.sendFile(path.join(__dirname, '/en', '/properties.html'));
+//app.get('/en/property-details.html', function (req, res){
+//    res.sendFile(path.join(__dirname, '/en', '/property-details.html'));
+//});
+
+app.get('/property-details.html', function (req, res){
+    res.sendFile(path.join(__dirname, '/property-details.html'));
 });
 
-app.get('/bg/properties.html', function (req, res){
-    res.sendFile(path.join(__dirname, '/bg', '/properties.html'));
+app.get('/contact.html', function (req, res){
+    res.sendFile(path.join(__dirname +'/contact.html'));
 });
 
-app.get('/en/property-details.html', function (req, res){
-    res.sendFile(path.join(__dirname, '/en', '/property-details.html'));
+//app.get('/en/contact.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/contact.html'));
+//});
+app.get('/food&drink.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/food&drink.html'));
 });
 
-app.get('/bg/property-details.html', function (req, res){
-    res.sendFile(path.join(__dirname, '/bg', '/property-details.html'));
+//app.get('/en/food&drink.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/food&drink.html'));
+//});
+
+app.get('/traveling.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/traveling.html'));
 });
 
-app.get('/bg/contact.html', function (req, res){
-    res.sendFile(path.join(__dirname  + '/bg' +'/contact.html'));
+//app.get('/en/traveling.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/traveling.html'));
+//});
+
+app.get('/culture.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/culture.html'));
 });
 
-app.get('/en/contact.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/contact.html'));
-});
-app.get('/bg/food&drink.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/food&drink.html'));
+//app.get('/en/culture.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/culture.html'));
+//});
+
+app.get('/cuisine.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/cuisine.html'));
 });
 
-app.get('/en/food&drink.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/food&drink.html'));
+//app.get('/en/cuisine.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/cuisine.html'));
+//});
+
+app.get('/complete-guide.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/complete-guide.html'));
 });
 
-app.get('/bg/traveling.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/traveling.html'));
+//app.get('/en/complete-guide.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/complete-guide.html'));
+//});
+
+app.get('/bar&nightlife.html', function (req, res){
+    res.sendFile(path.join(__dirname + '/bar&nightlife.html'));
 });
 
-app.get('/en/traveling.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/traveling.html'));
-});
-
-app.get('/bg/culture.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/culture.html'));
-});
-
-app.get('/en/culture.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/culture.html'));
-});
-
-app.get('/bg/cuisine.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/cuisine.html'));
-});
-
-app.get('/en/cuisine.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/cuisine.html'));
-});
-
-app.get('/bg/complete-guide.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/complete-guide.html'));
-});
-
-app.get('/en/complete-guide.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/complete-guide.html'));
-});
-
-app.get('/bg/bar&nightlife.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/bg' + '/bar&nightlife.html'));
-});
-
-app.get('/en/bar&nightlife.html', function (req, res){
-    res.sendFile(path.join(__dirname + '/en' + '/bar&nightlife.html'));
-});
+//app.get('/en/bar&nightlife.html', function (req, res){
+//    res.sendFile(path.join(__dirname + '/en' + '/bar&nightlife.html'));
+//});
 
 // Dynamic route for 'apartment-1.html' to 'apartment-9.html'
-app.get('/bg/apartment-:id.html', function (req, res) {
+app.get('/apartment-:id.html', function (req, res) {
     const apartmentId = req.params.id;
 
     // Ensure 'id' is a number between 1 and 9 to prevent invalid access
     if (apartmentId >= 1 && apartmentId <= 9) {
-        res.sendFile(path.join(__dirname,  '/bg', `apartment-${apartmentId}.html`));
+        res.sendFile(path.join(__dirname, `apartment-${apartmentId}.html`));
     } else {
         res.status(404).send('Apartment not found');
     }
 });
 
-app.get('/en/apartment-:id.html', function (req, res) {
-    const apartmentId = req.params.id;
-
-    // Ensure 'id' is a number between 1 and 9 to prevent invalid access
-    if (apartmentId >= 1 && apartmentId <= 9) {
-        res.sendFile(path.join(__dirname, '/en', `apartment-${apartmentId}.html`));
-    } else {
-        res.status(404).send('Apartment not found');
-    }
-});
+//app.get('/en/apartment-:id.html', function (req, res) {
+//    const apartmentId = req.params.id;
+//
+//    // Ensure 'id' is a number between 1 and 9 to prevent invalid access
+//    if (apartmentId >= 1 && apartmentId <= 9) {
+//        res.sendFile(path.join(__dirname, '/en', `apartment-${apartmentId}.html`));
+//    } else {
+//        res.status(404).send('Apartment not found');
+//    }
+//});
 
 // Start the server
 app.listen(port, function () {
