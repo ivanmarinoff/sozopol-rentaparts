@@ -3,7 +3,7 @@ function isDesktop() {
 }
 
 // Construct the manifest based on device type
-let iconUrl = isDesktop() ? '/static/fonts/fontawesome-webfont.svg' : '/static/fonts/fontawesome-webfont.svg';
+// let iconUrl = isDesktop() ? '/static/fonts/fontawesome-webfont.svg' : '/static/fonts/fontawesome-webfont.svg';
 
 // Generate the manifest content dynamically
 let manifest = {
@@ -15,7 +15,7 @@ let manifest = {
     background_color: "#3367D6",
     theme_color: "#3367D6",
     icons: [{
-        src: iconUrl,
+        // src: iconUrl,
         sizes: "512x512",
         type: "image/png"
     }]
