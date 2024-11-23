@@ -148,7 +148,7 @@ async function loadLanguageContent(language) {
         document.querySelector('meta[property="og:description"]')?.setAttribute('content', translations.meta?.ogDescription);
         document.querySelector('meta[property="og:image"]')?.setAttribute('content', translations.meta?.ogImage);
 
-        setText('.main-nav [href="/"]', translations.mainNav?.apartments);
+        setText('.logo h1', translations.mainNav?.logoText);
         setText('.nav [href="/"]', translations.nav?.home);
         setText('.nav [href="/properties.html"]', translations.nav?.apartments);
         setText('.nav [href="/property-details.html"]', translations.nav?.details);
