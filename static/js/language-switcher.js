@@ -124,67 +124,39 @@
 
 // Function to get the language parameter from the URL
 // Get the current language from the URL
+
 function getLanguage() {
     const params = new URLSearchParams(window.location.search);
     return params.get('lang') || 'bg'; // Default to 'bg';
-    const defaultTranslations = {
-    title: "Sozopol rental apartments",
-    nav: {
-        home: "Начало",
-        apartments: "Апартаменти",
-        details: "Детайли",
-        contact: "Контакти",
-    },
-    subHeader: {
-        email: "plamen@plasico.com",
-        address: "str.Odessa 38 Sozopol, BG 8130",
-    },
-    mainBanner: [
-        { category: "Созопол, България", headline: "Побързайте! Вземете най-добрия апартамент за вас" },
-    ],
-    featuredSection: {
-        title: "| Акценти",
-        headline: "Най-добрият апартамент с изглед към морето",
-    },
-    propertiesSection: {
-        title: "| Приключения",
-        headline: "Как да направите престоя си в Созопол незабравим",
-    },
-    contactSection: {
-        title: "| Контакти",
-        headline: "Свържете се с нашите агенти",
-    },
-    footer: {
-        copyright: "Всички права запазени.",
-        design: "Дизайн: ivanmarinoff",
-    },
-};
-
 }
 
 // Load and apply translations
 async function loadLanguageContent(language) {
+    if (language === 'en') {
     try {
         const response = await fetch(`/static/lang/${language}.json`);
         const translations = response.ok ? await response.json() : {};
-        const finalTranslations = { ...defaultTranslations, ...translations };
-
+        // const translations = await response.json();
         // Helper to update text content
         const setText = (selector, text) => {
             const element = document.querySelector(selector);
             if (element) element.textContent = text || '';
         };
+        setText('title', translations.title);
 
-        // Apply translations
-        setText('.info .fa-envelope', finalTranslations.subHeader?.email);
-        setText('.info .fa-map', finalTranslations.subHeader?.address);
+        document.querySelector('meta[property="og:title"]')?.setAttribute('content', translations.meta?.ogTitle);
+        document.querySelector('meta[property="og:description"]')?.setAttribute('content', translations.meta?.ogDescription);
+        document.querySelector('meta[property="og:image"]')?.setAttribute('content', translations.meta?.ogImage);
 
-        setText('.nav .home', finalTranslations.nav?.home);
-        setText('.nav [href="/properties.html"]', finalTranslations.nav?.apartments);
-        setText('.nav [href="/property-details.html"]', finalTranslations.nav?.details);
-        setText('.nav [href="/contact.html"]', finalTranslations.nav?.contact);
+        setText('.main-nav [href="/"]', translations.mainNav?.apartments);
+        setText('.nav [href="/"]', translations.nav?.home);
+        setText('.nav [href="/properties.html"]', translations.nav?.apartments);
+        setText('.nav [href="/property-details.html"]', translations.nav?.details);
+        setText('.nav [href="/contact.html"]', translations.nav?.contact);
+
     } catch (error) {
         console.error("Error loading translations:", error);
+    }
     }
 }
 
@@ -209,3 +181,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+

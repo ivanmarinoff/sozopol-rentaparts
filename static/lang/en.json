@@ -9,6 +9,9 @@
         "email": "plamen@plasico.com",
         "address": "str.Odessa 38 Sozopol, BG 8130"
     },
+    "mainNav": {
+        "apartments": "Apartments123"
+    },
     "nav": {
         "home": "Home",
         "apartments": "Apartments",

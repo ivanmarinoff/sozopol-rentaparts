@@ -35,8 +35,9 @@ app.use(
             fontSrc: ["'self'"],
             imgSrc: ["'self'"],
             scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.nonce}'`], // Use the generated nonce
-            styleSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'"],
             frameSrc: ["'self'"],
+            connectSrc: ["'self'"],
         },
         reportOnly: true, // Set to 'true' to enable report-only mode
     })
