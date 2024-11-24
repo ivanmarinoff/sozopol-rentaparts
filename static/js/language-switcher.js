@@ -133,30 +133,113 @@ function getLanguage() {
 // Load and apply translations
 async function loadLanguageContent(language) {
     if (language === 'en') {
-    try {
-        const response = await fetch(`/static/lang/${language}.json`);
-        const translations = response.ok ? await response.json() : {};
-        // const translations = await response.json();
-        // Helper to update text content
-        const setText = (selector, text) => {
-            const element = document.querySelector(selector);
-            if (element) element.textContent = text || '';
-        };
-        setText('title', translations.title);
+        try {
+            const response = await fetch(`/static/lang/${language}.json`);
+            const translations = response.ok ? await response.json() : {};
+            // const translations = await response.json();
+            // Helper to update text content
+            const setText = (selector, text) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = text || '';
+            };
+            setText('title', translations.title);
 
-        document.querySelector('meta[property="og:title"]')?.setAttribute('content', translations.meta?.ogTitle);
-        document.querySelector('meta[property="og:description"]')?.setAttribute('content', translations.meta?.ogDescription);
-        document.querySelector('meta[property="og:image"]')?.setAttribute('content', translations.meta?.ogImage);
+            document.querySelector('meta[property="og:title"]')?.setAttribute('content', translations.meta?.ogTitle);
+            document.querySelector('meta[property="og:description"]')?.setAttribute('content', translations.meta?.ogDescription);
+            document.querySelector('meta[property="og:image"]')?.setAttribute('content', translations.meta?.ogImage);
 
-        setText('.logo h1', translations.mainNav?.logoText);
-        setText('.nav [href="/"]', translations.nav?.home);
-        setText('.nav [href="/properties.html"]', translations.nav?.apartments);
-        setText('.nav [href="/property-details.html"]', translations.nav?.details);
-        setText('.nav [href="/contact.html"]', translations.nav?.contact);
+            setText('.logo h1', translations.mainNav?.logoText);
+            setText('.nav [href="/"]', translations.nav?.home);
+            setText('.nav [href="/properties.html"]', translations.nav?.apartments);
+            setText('.nav [href="/property-details.html"]', translations.nav?.details);
+            setText('.nav [href="/contact.html"]', translations.nav?.contact);
 
-    } catch (error) {
-        console.error("Error loading translations:", error);
-    }
+            // Main Banner
+            setText('.main-banner .item', translations.mainBanner?.item);
+            setText('.main-banner .headline', translations.mainBanner?.headline);
+
+            // Featured Section
+            setText('.featured-section h6', translations.featuredSection?.title);
+            setText('.featured-section h2', translations.featuredSection?.headline);
+
+            const accordionItems = document.querySelectorAll('.featured-section .accordion-item');
+            if (accordionItems.length > 0 && translations.featuredSection.accordion) {
+                accordionItems.forEach((item, index) => {
+                    const accordionTitle = item.querySelector('.accordion-header .accordion-button');
+                    const accordionContent = item.querySelector('.accordion-body');
+
+                    setText(accordionTitle, translations.featuredSection.accordion[index]?.title);
+                    setText(accordionContent, translations.featuredSection.accordion[index]?.content);
+                });
+            }
+
+            const infoItems = document.querySelectorAll('.featured-section .info-table ul li');
+            if (infoItems.length > 0 && translations.featuredSection.info) {
+                infoItems.forEach((item, index) => {
+                    const title = item.querySelector('h4');
+                    setText(title, translations.featuredSection.info[index]?.title);
+                    setText(title?.querySelector('span'), translations.featuredSection.info[index]?.subtitle);
+                });
+            }
+
+            // Properties Section
+            setText('.properties-section h6', translations.propertiesSection?.title);
+            setText('.properties-section h2', translations.propertiesSection?.headline);
+
+            const propertyItems = document.querySelectorAll('.properties-section .item');
+            if (propertyItems.length > 0 && translations.propertiesSection.properties) {
+                propertyItems.forEach((item, index) => {
+                    const category = item.querySelector('.category');
+                    const title = item.querySelector('h4 a');
+                    const description = item.querySelector('ul em');
+
+                    setText(category, translations.propertiesSection.properties[index]?.category);
+                    setText(title, translations.propertiesSection.properties[index]?.title);
+                    setText(description, translations.propertiesSection.properties[index]?.description);
+                });
+            }
+
+            // Contact Section
+            setText('.contact-section h6', translations.contactSection?.title);
+            setText('.contact-section h2', translations.contactSection?.headline);
+
+            const mapPhone = document.querySelector('.contact-content .item.phone h6');
+            const mapEmail = document.querySelector('.contact-content .item.email h6');
+
+            if (mapPhone) {
+                setText(mapPhone, translations.contactSection.map?.phone);
+                setText(mapPhone?.querySelector('span'), translations.contactSection.map?.phoneLabel);
+            }
+            if (mapEmail) {
+                setText(mapEmail, translations.contactSection.map?.email);
+                setText(mapEmail?.querySelector('span'), translations.contactSection.map?.emailLabel);
+            }
+
+            const contactForm = translations.contactSection.form;
+            if (contactForm) {
+                setText('#contact-form label[for="name"]', contactForm.nameLabel);
+                document.querySelector('#contact-form #name')?.setAttribute('placeholder', contactForm.namePlaceholder);
+
+                setText('#contact-form label[for="email"]', contactForm.emailLabel);
+                document.querySelector('#contact-form #email')?.setAttribute('placeholder', contactForm.emailPlaceholder);
+
+                setText('#contact-form label[for="subject"]', contactForm.subjectLabel);
+                document.querySelector('#contact-form #subject')?.setAttribute('placeholder', contactForm.subjectPlaceholder);
+
+                setText('#contact-form label[for="message"]', contactForm.messageLabel);
+                document.querySelector('#contact-form #message')?.setAttribute('placeholder', contactForm.messagePlaceholder);
+
+                setText('#contact-form button', contactForm.buttonText);
+            }
+
+            // Footer
+            setText('.footer .copyright', translations.footer?.copyright);
+            setText('.footer .design', translations.footer?.designBy);
+
+
+        } catch (error) {
+            console.error("Error loading translations:", error);
+        }
     }
 }
 
